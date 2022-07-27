@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 import s from './Form.module.css';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'components/store/contacts/actions';
+import { addContact } from "../../Redux/contacts-operation";
 
 
 
