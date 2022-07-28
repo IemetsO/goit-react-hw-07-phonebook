@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchContact, removeContact} from "../../Redux/contacts-operation";
 import s from "./ContactList.module.css";
-import { connect } from 'react-redux';
+
 
 
 
@@ -52,10 +52,8 @@ const onDelete = (id) => {
   );
 };
 
-const mapDispachToProps = dispatch => ({
-  fetchContacts: () => dispatch(fetchContact())
-})
 
-export default connect(null, mapDispachToProps)(ContactList);
+
+export default (ContactList);
 
 
